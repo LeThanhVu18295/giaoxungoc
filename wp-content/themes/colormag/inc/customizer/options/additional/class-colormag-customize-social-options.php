@@ -177,6 +177,11 @@ class ColorMag_Customize_Social_Options extends ColorMag_Customize_Base_Option {
 				'title'   => esc_html__( 'YouTube', 'colormag' ),
 				'default' => '',
 			),
+			'colormag_social_login'    => array(
+				'id'      => 'colormag_social_login',
+				'title'   => esc_html__( 'Login', 'colormag' ),
+				'default' => '',
+			),
 		);
 
 		// Available social links via theme.

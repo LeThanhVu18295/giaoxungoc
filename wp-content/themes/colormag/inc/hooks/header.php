@@ -79,7 +79,7 @@ if ( ! function_exists( 'colormag_header_nav_container_start' ) ) :
 	function colormag_header_nav_container_start() {
 		?>
 		<div id="header-text-nav-container" class="clearfix">
-			<!-- <div class="bg" width="100%" height="180px" style="background-image: url(/wp-content/uploads/2023/03/bg-banner.webp);background-repeat: repeat-x;"> -->
+			<div class="bg" width="100%" height="180px" style="background-image: linear-gradient(180deg, rgb(236 246 183), rgb(247 251 222))">
 		<?php
 	}
 

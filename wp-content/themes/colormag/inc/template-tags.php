@@ -253,6 +253,7 @@ if ( ! function_exists( 'colormag_social_links' ) ) :
 			'colormag_social_instagram'  => 'Instagram',
 			'colormag_social_pinterest'  => 'Pinterest',
 			'colormag_social_youtube'    => 'YouTube',
+			'colormag_social_login'      => 'Login',
 		);
 		?>
 
@@ -307,6 +308,7 @@ if ( ! function_exists( 'colormag_social_links' ) ) :
 			'colormag_social_instagram'  => 'Instagram',
 			'colormag_social_pinterest'  => 'Pinterest',
 			'colormag_social_youtube'    => 'YouTube',
+			'colormag_social_login'      => 'Login',
 		);
 		?>
 			<?php
@@ -326,8 +328,11 @@ if ( ! function_exists( 'colormag_social_links' ) ) :
 					if ( 1 == get_theme_mod( $key . '_checkbox', 0 ) ) {
 						$new_tab = 'target="_blank"';
 					}
-
-					$colormag_links_output .= '<a href="' . esc_url( $link ) . '" ' . $new_tab . '><i class="fa fa-' . strtolower( $value ) . '"></i></a>';
+					if(strtolower( $value ) == 'login') {
+						$colormag_links_output .= '<a alt="' . strtolower( $value ) . '" href="' . esc_url( $link ) . '" ' . $new_tab . '><i class="fa fa-user-circle"></i></a>';
+					} else {
+						$colormag_links_output .= '<a href="' . esc_url( $link ) . '" ' . $new_tab . '><i class="fa fa-' . strtolower( $value ) . '"></i></a>';
+					}
 					$colormag_links_output .= '</div>';
 				}
 				$i ++;

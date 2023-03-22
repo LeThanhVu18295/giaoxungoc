@@ -390,6 +390,7 @@ if ( ! function_exists( 'colormag_setup' ) ) :
 				'colormag_social_instagram'       => '#',
 				'colormag_social_pinterest'       => '#',
 				'colormag_social_youtube'         => '#',
+				'colormag_social_login'         => '#',
 			),
 
 			// Set up nav menus for each of the two areas registered in the theme.
