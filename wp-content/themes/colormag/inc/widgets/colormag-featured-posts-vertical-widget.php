@@ -117,12 +117,6 @@ class colormag_featured_posts_vertical_widget extends ColorMag_Widget {
 			?>
 
 			<div class="single-article clearfix">
-				<?php
-				if ( has_post_thumbnail() ) {
-					$this->the_post_thumbnail( $post->ID, $featured );
-				}
-				?>
-
 				<div class="article-content">
 					<?php
 					colormag_colored_category();
@@ -136,6 +130,11 @@ class colormag_featured_posts_vertical_widget extends ColorMag_Widget {
 
 					<?php if ( 1 == $i ) { ?>
 						<div class="entry-content">
+							<?php
+							if ( has_post_thumbnail() ) {
+								$this->the_post_thumbnail( $post->ID, $featured );
+							}
+							?>
 							<?php the_excerpt(); ?>
 						</div>
 					<?php } ?>

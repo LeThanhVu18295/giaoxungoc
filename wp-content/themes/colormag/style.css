@@ -1643,6 +1643,10 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
 	display: inline-block;
 }
 
+.widget_featured_posts .article-content .above-entry-meta {
+	display: none;
+}
+
 .widget_featured_posts .article-content .entry-title {
 	padding: 10px 0 0;
 	font-size: 22px;
@@ -1762,7 +1766,7 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
 }
 
 .widget_featured_posts .following-post .article-content .entry-title {
-	font-size: 18px;
+	font-size: 22px;
 }
 
 .widget_featured_posts .following-post .article-content .below-entry-meta {

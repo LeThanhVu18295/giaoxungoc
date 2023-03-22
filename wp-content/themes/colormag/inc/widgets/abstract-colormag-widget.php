@@ -732,7 +732,7 @@ abstract class ColorMag_Widget extends WP_Widget {
 
 		// Display the title.
 		if ( ! empty( $title ) ) {
-			echo '<h3 class="widget-title" ' . $border_color . '><span ' . $title_color . '>' . esc_html( $title ) . '</span></h3>'; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+			echo '<h3 class="widget-title" ' . $border_color . '><a href="'. get_category_link( $category ) .'"><span ' . $title_color . '>' . esc_html( $title ) . '</span></a></h3>'; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 		}
 
 	}
@@ -818,7 +818,7 @@ abstract class ColorMag_Widget extends WP_Widget {
 		$image_alt_text  = empty( $image_alt_text ) ? $title_attribute : $image_alt_text;
 		$figure_class    = ! empty( $figure_class ) ? ' class="' . $figure_class . '"' : '';
 
-		$image .= '<figure' . $figure_class . '>';
+		$image .= '<div class="pull-right" ' . $figure_class . '>';
 
 		if ( $link_enable ) {
 			$image .= '<a href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0' ) . '">';
@@ -837,7 +837,7 @@ abstract class ColorMag_Widget extends WP_Widget {
 			$image .= '</a>';
 		}
 
-		$image .= '</figure>';
+		$image .= '</div>';
 
 		echo $image; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 

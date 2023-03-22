@@ -36,7 +36,7 @@ add_action( 'wp_head', 'colormag_pingback_header' );
  * @uses filter excerpt_length
  */
 function colormag_excerpt_length( $length ) {
-	return 20;
+	return 150;
 }
 
 add_filter( 'excerpt_length', 'colormag_excerpt_length' );
