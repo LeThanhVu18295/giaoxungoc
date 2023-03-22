@@ -1996,14 +1996,14 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
 }
 
 #primary .widget-title {
-	border-bottom: 2px solid #289dcc;
+	border-bottom: 2px solid rgb(22,126,231);
 	font-size: 18px;
 	margin-bottom: 15px;
 	padding-bottom: 0;
 }
 
 #primary .widget-title span {
-	/* background-color: #289dcc; */
+	background-color: rgb(22,126,231);
 	color: #fff;
 	padding: 6px 12px;
 	display: inline-block;
