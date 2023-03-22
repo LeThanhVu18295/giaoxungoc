@@ -2003,7 +2003,7 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
 }
 
 #primary .widget-title span {
-	background-color: #289dcc;
+	/* background-color: #289dcc; */
 	color: #fff;
 	padding: 6px 12px;
 	display: inline-block;
