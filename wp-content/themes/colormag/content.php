@@ -26,20 +26,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	do_action( 'colormag_before_posts_loop' );
 	?>
 
-	<?php
-	if ( ! has_post_format( array( 'gallery' ) ) ) :
-		if ( has_post_thumbnail() ) :
-			?>
-			<div class="featured-image">
-				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-					<?php the_post_thumbnail( 'colormag-featured-image' ); ?>
-				</a>
-			</div>
-			<?php
-		endif;
-	endif;
-	?>
-
 	<div class="article-content clearfix">
 
 		<?php
@@ -59,9 +45,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php colormag_entry_meta(); ?>
 
 		<div class="entry-content clearfix">
+			<?php
+			if ( ! has_post_format( array( 'gallery' ) ) ) :
+				if ( has_post_thumbnail() ) :
+					?>
+					<div id="post-thumbnail" class="pull-right">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+							<?php the_post_thumbnail( 'colormag-featured-image' ); ?>
+						</a>
+					</div>
+					<?php
+				endif;
+			endif;
+			?>
 			<?php the_excerpt(); ?>
 			<a class="more-link" title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
-				<span><?php esc_html_e( 'Read more', 'colormag' ); ?></span>
+				<span>Xem thêm</span>
 			</a>
 		</div>
 

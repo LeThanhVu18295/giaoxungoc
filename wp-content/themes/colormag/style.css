@@ -3304,15 +3304,20 @@ i.fa-arrow-up, i.fa-arrow-down {
 	font-size: 14px;
 }
 
-.archive #content .post:nth-child(2n+1) {
+/* .archive #content .post:nth-child(2n+1) {
 	float: right;
 	width: 48.7013%;
-}
+} */
 
-.archive #content .post:nth-child(2n) {
+/* .archive #content .post:nth-child(2n) {
 	float: left;
 	width: 48.7013%;
 	clear: both;
+} */
+
+#post-thumbnail {
+	margin-top: 8px;
+	margin-left: 8px;
 }
 
 .archive #content .post:first-child {
