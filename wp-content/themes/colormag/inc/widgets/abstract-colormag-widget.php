@@ -818,7 +818,7 @@ abstract class ColorMag_Widget extends WP_Widget {
 		$image_alt_text  = empty( $image_alt_text ) ? $title_attribute : $image_alt_text;
 		$figure_class    = ! empty( $figure_class ) ? ' class="' . $figure_class . '"' : '';
 
-		$image .= '<div class="pull-right" ' . $figure_class . '>';
+		$image .= '<div id="post-thumbnail" class="pull-right" ' . $figure_class . '>';
 
 		if ( $link_enable ) {
 			$image .= '<a href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0' ) . '">';
