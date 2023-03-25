@@ -136,7 +136,9 @@ class colormag_featured_posts_vertical_widget extends ColorMag_Widget {
 							}
 							?>
 							<?php the_excerpt(); ?>
-							<a href="<?php the_permalink(); ?>"><button class="btn-readmore" style="font-size: small;margin-bottom:3px">Xem thêm</button></a>
+							<a class="more-link" title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
+								<span>Xem thêm</span>
+							</a>
 						</div>
 					<?php } ?>
 				</div>
